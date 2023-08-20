@@ -13,6 +13,7 @@ An e-commerce application designed for ordering food.
 ### Built with
 
 - HTML
+- SCSS
 - Bulma CSS
 - React JS
 - JavaScript
