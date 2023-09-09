@@ -14,10 +14,10 @@ An e-commerce application designed for ordering food.
 
 - HTML
 - SCSS
-- Bulma CSS
+- Bulma
 - React JS
-- JavaScript
-- Supabase
+- Redux-toolkit
+- Firebase
 
 
 ### Getting Started with scaffolding this Project 
