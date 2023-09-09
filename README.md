@@ -16,7 +16,7 @@ An e-commerce application designed for ordering food.
 - SCSS
 - Bulma
 - React JS
-- Redux-toolkit
+- Redux-Toolkit
 - Firebase
 
 
