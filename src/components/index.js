@@ -1,6 +1,5 @@
 import Header from "./Header";
 import Footer from "./Footer";
-import Breadcrumb from "./Breadcrumb";
 import HomeFirstSection from "./HomeFirstSection";
 import HomeSecondSection from "./HomeSecondSection";
 import OtherLinksSection from "./OtherLinksSection";
@@ -16,7 +15,7 @@ import WingsideSpecial from "./WingsideSpecial";
 export {
   Header,
   Footer,
-  Breadcrumb,
+  
   HomeFirstSection,
   HomeSecondSection,
   OtherLinksSection,

@@ -1,85 +1,87 @@
 import React from "react";
 import { logo } from "../assets";
-import { NavLink } from "react-router-dom";
-import { ShoppingBag, User } from "phosphor-react";
-import { useState } from "react";
+// import { Link } from "react-router-dom";
+import {
+  HiOutlineHeart,
+  HiOutlineMenuAlt3,
+  HiOutlineShoppingBag,
+  HiOutlineUser,
+} from "react-icons/hi";
+
+//import { useState } from "react";
 
 const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  // const [menuOpen, setMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
+  // const toggleMenu = () => {
+  //   setMenuOpen(!menuOpen);
+  // };
+
+  // const untoggleMenu = () => {
+  //   setMenuOpen(false);
+  // };
 
   return (
-    <nav className={`navbar is-spaced is-transparent`}>
-      <div className={`navbar-brand`}>
-        <NavLink className={`navbar-item`} to="/" onClick={toggleMenu}>
-          <img src={logo} />
-        </NavLink>
-        <a
-          role={`button`}
-          className={`navbar-burger burger ${menuOpen ? "is-active" : ""}`}
-          aria-label={`menu`}
-          aria-expanded={`false`}
-          data-target={`navbarBasicExample`}
-          onClick={toggleMenu}
-        >
-          <span aria-hidden={`true`}></span>
-          <span aria-hidden={`true`}></span>
-          <span aria-hidden={`true`}></span>
-        </a>
-      </div>
-
-      <div
-        id={`navbarBasicExample`}
-        className={`navbar-menu ${menuOpen ? "is-active" : ""}`}
+    <section className="is-relative is-clipped has-background-light">
+      <nav
+        className="navbar has-background-light is-transparent is-fixed-top"
+        style={{ borderBottom: "1px solid #cfd5e2" }}
       >
-        <div className={`navbar-start`}>
-          <NavLink
-            to="/OurMenu"
-            className={`navbar-item is-uppercase`}
-            onClick={toggleMenu}
+        <div className="navbar-brand is-align-items-center">
+          <a className="navbar-item is-size-4" href="#">
+            <img src={logo} width="auto" className="image" />
+          </a>
+          <a
+            className="navbar-burger is-flex-touch is-align-items-center is-justify-content-center"
+            role="button"
           >
-            our menu
-          </NavLink>
-          <a className={`navbar-item is-uppercase`} onClick={toggleMenu}>
-            flavors
-          </a>
-          <a className={`navbar-item is-uppercase`} onClick={toggleMenu}>
-            wing club
-          </a>
-          <a className={`navbar-item is-uppercase`} onClick={toggleMenu}>
-            wingside business
-          </a>
-          <a className={`navbar-item is-uppercase`} onClick={toggleMenu}>
-            catering
+            <HiOutlineMenuAlt3 className="has-text-dark is-size-3" />
           </a>
         </div>
-        <div className={`navbar-end`}>
-          <div className={`navbar-item`}>
-            <div className={`buttons`}>
-              <NavLink
-                className={`button btn is-warning is-rounded`}
-                to="/OrderNow"
-                onClick={toggleMenu}
+        <div className="navbar-menu ml-10 is-align-items-center">
+          <div className="navbar-start" style={{ width: "100%" }}>
+            <a className="navbar-item ml-auto" href="#">
+              Category
+            </a>
+            <a className="navbar-item" href="#">
+              Collection
+            </a>
+            <a className="navbar-item" href="#">
+              Story
+            </a>
+            <a className="navbar-item mr-auto" href="#">
+              Brand
+            </a>
+          </div>
+          <div className="navbar-end">
+            <a className="navbar-item is-flex" href="#">
+              <HiOutlineHeart className="is-size-4" />
+            </a>
+            <a className="navbar-item is-flex is-align-items-center" href="#">
+              <HiOutlineShoppingBag className="is-size-4" />
+              <span
+                className="is-inline-flex is-align-items-center is-justify-content-center has-background-white has-text-weight-bold"
+                style={{
+                  width: "24px",
+                  height: "24px",
+                  borderRadius: "50%",
+                }}
               >
-                <span className={`icon`}>
-                  <ShoppingBag size={17} fontWeight={900} />
-                </span>
-                <span>Order Now</span>
-              </NavLink>
-              <a className={`button btn is-rounded is-warning`}>
-                <span className={`icon`}>
-                  <User size={17} fontWeight={900} />
-                </span>
-                <span>My Account</span>
-              </a>
-            </div>
+                3
+              </span>
+            </a>
+            <a
+              className="navbar-item pr-10 is-flex is-align-items-center is-align-self-stretch has-text-weight-bold"
+              href="#"
+            >
+              <HiOutlineUser className="mr-3 is-size-4" />
+
+              <span>Sign In</span>
+            </a>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </section>
   );
 };
 

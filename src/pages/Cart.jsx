@@ -1,7 +1,8 @@
 import React from "react";
 import { ShoppingCart, Trash } from "phosphor-react";
 import { Link } from "react-router-dom";
-import useStore from "../zustand/store";
+import useStore from "../redux/store/"
+
 
 const Cart = () => {
   const products = useStore((state) => state.products);
@@ -100,6 +101,7 @@ const Cart = () => {
         </div>
         <div className={`has-text-centered`}>
           <ShoppingCart size={200} fontWeight={900} />
+         
 
           <p className={`title has-text-warning has-text-weight-semibold`}>
             Your Cart is empty

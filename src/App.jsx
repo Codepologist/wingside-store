@@ -3,7 +3,6 @@ import { Routes, Route } from "react-router-dom";
 import {
   Header,
   Footer,
-  Breadcrumb,
   Wings,
   Sides,
   Sandwiches,
@@ -20,7 +19,7 @@ function App() {
   return (
     <React.Fragment>
       <Header />
-      <Breadcrumb />
+
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/OurMenu" element={<OurMenu />} />

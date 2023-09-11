@@ -35,7 +35,7 @@ const Home = () => {
           content="The Wingside of Town – Wings. Sandwiches. Wraps - Wingside®"
         />
       </Helmet>
-      <section className={`hero is-warning is-halfheight`}>
+      <section className={`hero is-warning is-fullheight`}>
         <div className={`hero-body pb-0`}>
           <Swiper
             autoplay={true}
