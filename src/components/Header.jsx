@@ -8,48 +8,65 @@ import {
   HiOutlineUser,
 } from "react-icons/hi";
 
-//import { useState } from "react";
+import { useState } from "react";
 
 const Header = () => {
-  // const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  // const toggleMenu = () => {
-  //   setMenuOpen(!menuOpen);
-  // };
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
 
-  // const untoggleMenu = () => {
-  //   setMenuOpen(false);
-  // };
+  const untoggleMenu = () => {
+    setMenuOpen(false);
+  };
 
   return (
-    <section className="is-relative is-clipped has-background-light">
+    <section
+      className={`is-relative is-clipped ${
+        menuOpen ? "has-background-light" : ""
+      }`}
+    >
       <nav
-        className="navbar has-background-light is-transparent is-fixed-top"
+        className={`navbar ${
+          menuOpen ? "has-background-light" : ""
+        } is-transparent is-fixed-top`}
         style={{ borderBottom: "1px solid #cfd5e2" }}
       >
         <div className="navbar-brand is-align-items-center">
           <a className="navbar-item is-size-4" href="#">
-            <img src={logo} width="auto" className="image" />
+            <img src={logo} width="auto" className="image" alt="Logo" />
           </a>
           <a
-            className="navbar-burger is-flex-touch is-align-items-center is-justify-content-center"
+            className={`navbar-burger is-flex-touch is-align-items-center is-justify-content-center ${
+              menuOpen ? "is-active" : ""
+            }`}
             role="button"
+            onClick={toggleMenu}
           >
-            <HiOutlineMenuAlt3 className="has-text-dark is-size-3" />
+            <HiOutlineMenuAlt3
+              className={`has-text-dark is-size-3 ${
+                menuOpen ? "is-active" : ""
+              }`}
+            />
           </a>
         </div>
-        <div className="navbar-menu ml-10 is-align-items-center">
+        <div
+          className={`navbar-menu ml-10 is-align-items-center ${
+            menuOpen ? "is-active" : ""
+          }`}
+        >
           <div className="navbar-start" style={{ width: "100%" }}>
-            <a className="navbar-item ml-auto" href="#">
+            <a className="navbar-item ml-auto" href="#" onClick={untoggleMenu}>
               Category
             </a>
-            <a className="navbar-item" href="#">
+            <a className="navbar-item" href="#" onClick={untoggleMenu}>
               Collection
             </a>
-            <a className="navbar-item" href="#">
+            <a className="navbar-item" href="#" onClick={untoggleMenu}>
               Story
             </a>
-            <a className="navbar-item mr-auto" href="#">
+            <a className="navbar-item mr-auto" href="#" onClick={untoggleMenu}>
               Brand
             </a>
           </div>
@@ -75,7 +92,6 @@ const Header = () => {
               href="#"
             >
               <HiOutlineUser className="mr-3 is-size-4" />
-
               <span>Sign In</span>
             </a>
           </div>
