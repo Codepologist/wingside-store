@@ -30,13 +30,14 @@ const Home = () => {
         />
       </Helmet>
 
-      <section className="hero is-warning is-fullheight-with-navbar" style={{ paddingTop: "2.9rem" }}>
+      <section className="hero is-warning" style={{ paddingTop: "2.9rem" }}>
         <div className="hero-body pb-0">
           <div className="columns is-align-items-center">
-            <div className="column">
+            <div className="column" >
+              <div className="hero-paragraph-padding">
               <p
                 className="title has-text-weight-bold has-text-white is-size-1-mobile has-text-centered-mobile"
-                style={{ fontSize: "80px" }}
+                style={{ fontSize: "80px"}}
               >
                 Grab life by the wings
               </p>
@@ -52,6 +53,7 @@ const Home = () => {
                 >
                   order now
                 </a>
+              </div>
               </div>
             </div>
             <div className="column">
