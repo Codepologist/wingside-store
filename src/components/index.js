@@ -1,8 +1,8 @@
-import Header from "./Header";
+import Navbar from "./Navbar";
 import Footer from "./Footer";
 import HomeFirstSection from "./HomeFirstSection";
 import HomeSecondSection from "./HomeSecondSection";
-import OtherLinksSection from "./OtherLinksSection";
+import Breadcrumb from "./ Breadcrumb";
 import Wings from "./Wings";
 import Sides from "./Sides";
 import Sandwiches from "./Sandwiches";
@@ -13,12 +13,11 @@ import WingCafe from "./WingCafe";
 import WingsideSpecial from "./WingsideSpecial";
 
 export {
-  Header,
+  Navbar,
   Footer,
-  
   HomeFirstSection,
   HomeSecondSection,
-  OtherLinksSection,
+  Breadcrumb,
   Wings,
   Sides,
   Sandwiches,

@@ -2,9 +2,9 @@
 
 // Import a Google Font
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Rubik:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Nunito:wght@400;500;600;700;800;900&display=swap");
 
-$family-sans-serif: "Rubik", sans-serif;
+$family-sans-serif: "Nunito", sans-serif;
 $family-monospace: "Poppins", sans-serif;
 
 $yellow: #f9cb0f;
@@ -17,7 +17,25 @@ $dark-333: #333333;
 
 $warning: $yellow;
 
+$button-ghost-border-color: transparent;
+$button-ghost-decoration: none;
+$button-ghost-hover-decoration: none;
+$button-ghost-background: none;
+
+$button-border-color: transparent;
+
+$button-focus-box-shadow-color: none;
+
 // Define CSS Class
+
+.is-no-focus-outline {
+  &:hover,
+  &:focus,
+  &:active {
+    outline-color: transparent !important;
+    outline: none !important;
+  }
+}
 
 .pr-10 {
   padding-right: 2.5rem !important;
@@ -34,18 +52,6 @@ $warning: $yellow;
 }
 
 
-.navbar {
-  .navbar-start {
-    margin-left: 21% !important;
-
-    .navbar-item {
-      font-size: 14px !important;
-      line-height: 60px !important;
-      font-weight: 500 !important;
-      color: $link !important;
-    }
-  }
-}
 
 @media screen and (max-width: 1023px) {
   .is-flex-touch {
@@ -53,9 +59,18 @@ $warning: $yellow;
   }
 }
 
+@media screen and (max-width: 768px) {
+  .is-hero-item-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
 .navbar-burger {
   &:hover {
-    color: $yellow !important;
     background-color: transparent !important;
   }
 }
@@ -68,21 +83,55 @@ $warning: $yellow;
 
 @-webkit-keyframes menuAnimation {
   0% {
-    margin-top: -100px;
+    margin-left: -100px;
   }
   100% {
-    margin-top: 0;
+    margin-left: 0;
   }
 }
 
 @keyframes menuAnimation {
   0% {
-    margin-top: -100px;
+    margin-left: -100px;
   }
   100% {
-    margin-top: 0;
+    margin-left: 0;
   }
 }
+
+// @-webkit-keyframes menuAnimation {
+//   0% {
+//     display: none;
+//     opacity: 0;
+//     transform: translateX(20px);
+//   }
+
+//   1% {
+//     display: block;
+//   }
+
+//   100% {
+//     opacity: 1;
+//     transform: translateX(0);
+//   }
+// }
+
+// @keyframes menuAnimation {
+//   0% {
+//     display: none;
+//     opacity: 0;
+//     transform: translateX(20px);
+//   }
+
+//   1% {
+//     display: block;
+//   }
+
+//   100% {
+//     opacity: 1;
+//     transform: translateX(0);
+//   }
+// }
 
 /* .navbar-menu {
   &:hover {
@@ -147,63 +196,8 @@ $warning: $yellow;
   background-position: center;
 }
 
-.other-links-section ul {
-  font-size: 16px !important;
-  line-height: 19px !important;
-  font-weight: 500 !important;
-  color: $link !important;
-}
-
 .navbar-item img {
   max-height: 5rem !important;
-}
-
-.head-r {
-  h1 {
-    font-family: $family-monospace;
-    color: $light-fff;
-    text-decoration: none;
-    white-space: break-spaces;
-    text-align: left;
-    line-height: 90px;
-    letter-spacing: -4px;
-    font-weight: 800;
-    font-size: 80px;
-    height: auto;
-    width: auto;
-  }
-  p {
-    font-family: $family-sans-serif;
-    text-transform: uppercase;
-    color: $light-fff;
-    text-decoration: none;
-    white-space: break-spaces;
-    text-align: left;
-    line-height: 50px;
-    letter-spacing: 0px;
-    font-weight: 400;
-    font-size: 40px;
-    height: auto;
-    width: auto;
-  }
-}
-
-.save-water {
-  background-color: $light-fff;
-  color: rgb(255, 255, 255);
-  width: 452px;
-  height: 452px;
-  min-height: 0px;
-  min-width: 0px;
-  max-height: none;
-  max-width: none;
-  overflow: hidden;
-  border-radius: 300px;
-  transform-origin: 50% 50% 0px;
-  opacity: 1;
-  transform: translate(0px);
-  visibility: visible;
-  margin-bottom: 10px;
 }
 
 // Import only what you need from Bulma

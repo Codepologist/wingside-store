@@ -4,7 +4,6 @@ import product from "./Wingside-Product.webp";
 import bash from "./Wingside-Bash.webp";
 import party from "./aprty-2.webp";
 import hand from "./hand-1.webp";
-import handhelper from "./handhelper.webp";
 import milkshake from "./milkshake.webp";
 import wingsrookie from "./Wings-Jumbo-300x300.webp";
 import wingsregular from "./Wings-Regular-300x300.webp";
@@ -36,7 +35,6 @@ export {
   bash,
   party,
   hand,
-  handhelper,
   milkshake,
   wingsrookie,
   wingsregular,

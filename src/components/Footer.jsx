@@ -1,24 +1,30 @@
-import React from "react";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className={`footer has-background-warning`}>
-      <div className={`container`}>
-        <div className={`content`}>
-          <span className={`has-text-white has-text-weight-medium`}>
-            © 2023 All Rights Reserved. Wingside Foods.
+    <footer className="footer has-background-warning">
+      <div className="container">
+        <div className="content has-text-centered">
+          <p
+            style={{
+              fontSize: "16px",
+              lineHeight: "24px",
+              fontWeight: "400",
+              color: "#fcfcfc",
+            }}
+          >
+            © 2023 Wingside Foods. All Rights Reserved.
+          </p>
+        </div>
+        <div className="content has-text-centered has-text-white">
+          <span className="icon has-text-weight-bold">
+            <FaFacebookF />
           </span>
-          <span className={`icon-text is-pulled-right`}>
-            <span className={`icon`}>
-              <FaFacebookF color={"#fff"} fontWeight={500} fontSize={20} />
-            </span>
-            <span className={`icon`}>
-              <FaTwitter color={`#fff`} fontWeight={500} fontSize={20} />
-            </span>
-            <span className={`icon`}>
-              <FaInstagram color={`#fff`} fontWeight={500} fontSize={20} />
-            </span>
+          <span className="icon has-text-weight-bold">
+            <FaTwitter />
+          </span>
+          <span className="icon">
+            <FaInstagram style={{ fontWeight: "900" }} />
           </span>
         </div>
       </div>

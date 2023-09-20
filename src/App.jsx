@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import {
-  Header,
+  Navbar,
   Footer,
   Wings,
   Sides,
@@ -13,16 +13,15 @@ import {
   WingsideSpecial,
 } from "./components";
 
-import { Home, OurMenu, OrderNow, Cart } from "./pages";
+import { Home, Admin, OrderNow, Cart, OrderHistory, Contact } from "./pages";
 
 function App() {
   return (
     <React.Fragment>
-      <Header />
-
+      <Navbar />
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/OurMenu" element={<OurMenu />} />
+        <Route path="/Contact" element={<Contact />} />
         <Route path="/OrderNow" element={<OrderNow />}>
           <Route path="/OrderNow" element={<Wings />} />
           <Route path="/OrderNow/Sides" element={<Sides />} />
@@ -38,7 +37,6 @@ function App() {
         </Route>
         <Route path="/Cart" element={<Cart />} />
       </Routes>
-
       <Footer />
     </React.Fragment>
   );

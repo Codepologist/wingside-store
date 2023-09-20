@@ -1,7 +1,7 @@
 import React from "react";
 
-const Account = () => {
+const Admin = () => {
   return <div>Account</div>;
 };
 
-export default Account;
+export default Admin;

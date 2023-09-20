@@ -1,15 +1,15 @@
 import React from "react";
-import { ShoppingCart, Trash } from "phosphor-react";
+import { HiOutlineShoppingCart, HiOutlineTrash } from "react-icons/hi";
 import { Link } from "react-router-dom";
-import useStore from "../redux/store/"
+// import useStore from "../../redux/store"
 
 
 const Cart = () => {
-  const products = useStore((state) => state.products);
-  const increaseQuantity = useStore((state) => state.increaseQuantity);
-  const decreaseQuantity = useStore((state) => state.decreaseQuantity);
-  const removeFromCart = useStore((state) => state.removeFromCart);
-  const getCartTotal = useStore((state) => state.getCartTotal);
+  // const products = useStore((state) => state.products);
+  // const increaseQuantity = useStore((state) => state.increaseQuantity);
+  // const decreaseQuantity = useStore((state) => state.decreaseQuantity);
+  // const removeFromCart = useStore((state) => state.removeFromCart);
+  // const getCartTotal = useStore((state) => state.getCartTotal);
 
   return (
     <section className={`section`}>
@@ -90,7 +90,7 @@ const Cart = () => {
                     </td>
                     <td className={`has-text-centered`}>
                       <a onClick={() => removeFromCart(product.id)}>
-                        <Trash />
+                        <HiOutlineTrash />
                       </a>
                     </td>
                   </tr>
@@ -100,7 +100,7 @@ const Cart = () => {
           </table>
         </div>
         <div className={`has-text-centered`}>
-          <ShoppingCart size={200} fontWeight={900} />
+          <HiOutlineShoppingCart size={200} fontWeight={900} />
          
 
           <p className={`title has-text-warning has-text-weight-semibold`}>

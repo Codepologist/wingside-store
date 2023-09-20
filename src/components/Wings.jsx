@@ -1,6 +1,6 @@
 import React from "react";
 import { wings } from "../products/wings";
-import useStore from "../redux/store";
+// import useStore from "../redux/store";
 
 const Wings = () => {
   const addToCart = useStore((state) => state.addToCart);
