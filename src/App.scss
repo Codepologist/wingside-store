@@ -53,9 +53,9 @@ $button-focus-box-shadow-color: none;
 
 
 
-@media screen and (max-width: 1023px) {
-  .is-flex-touch {
-    display: flex !important;
+@media screen and (min-width: 1024px) {
+  .hero-paragraph-padding {
+    padding-bottom: 15rem;
   }
 }
 
