@@ -18,9 +18,9 @@ An e-commerce application designed for ordering food.
 - React JS
 - Redux-Toolkit
 - Firebase
+- Stripe Payment
 
-
-### Getting Started with scaffolding this Project 
+### Getting Started with scaffolding this Project
 
 This project was bootstrapped with [Vite](https://github.com/vitejs/vite).
 
