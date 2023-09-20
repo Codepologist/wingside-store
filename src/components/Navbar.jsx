@@ -81,26 +81,39 @@ const Navbar = () => {
             <a className="navbar-item mobile-menu" href="#" onClick={untoggleMenu}>
               Contact Us
             </a>
-            <a className="navbar-item mobile-menu" href="#" onClick={untoggleMenu}>
-              Story
+            <hr className="navbar-divider is-hidden-desktop" />
+            <a className="navbar-item mobile-menu is-hidden-desktop" href="#" onClick={untoggleMenu}>
+             Login
             </a>
-            <a className="navbar-item mobile-menu" href="#" onClick={untoggleMenu}>
-              Brand
+            <a className="navbar-item mobile-menu is-hidden-desktop " href="#" onClick={untoggleMenu}>
+              Register
+            </a>
+            <a className="navbar-item mobile-menu is-hidden-desktop " href="#" onClick={untoggleMenu}>
+              My Orders
             </a>
           </div>
           
-          <div className="navbar-end is-hidden-mobile">
+          <div className="navbar-end is-hidden-mobile is-hidden-tablet-only">
             <div className="navbar-item">
               <div className="field is-grouped">
                 <p className="control">
                   <a className="button is-ghost is-no-focus-outline" href="#">
-                    <span className="icon">
-                      <HiOutlineHeart className="is-size-4" />
-                    </span>
+                  Login
                   </a>
                 </p>
                 <p className="control">
                   <a className="button is-ghost is-no-focus-outline" href="#">
+                  Register
+                  </a>
+                </p>
+                <p className="control">
+                  <a className="button is-ghost is-no-focus-outline" href="#">
+                  My Orders
+                  </a>
+                </p>
+                <p className="control">
+                  <a className="button is-ghost is-no-focus-outline" href="#">
+                    Cart
                     <HiOutlineShoppingBag className="is-size-4" />
                     <span
                       className="has-background-warning has-text-weight-bold"
