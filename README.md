@@ -1,6 +1,6 @@
 # Wingside-store Food App
 
-An e-commerce application designed for ordering food.
+An e-commerce application built for ordering food.
 
 ## Screenshot
 
