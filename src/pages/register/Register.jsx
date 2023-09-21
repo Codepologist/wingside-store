@@ -16,9 +16,7 @@ const Register = () => {
             <h2 className="title is-size-3 mt-6 mb-2 is-spaced">
               Register an account
             </h2>
-            <p className="subtitle mb-6">
-              Please enter details to proceed.
-            </p>
+            <p className="subtitle mb-6">Please enter details to proceed.</p>
           </div>
           <form action="">
             <div className="field mb-4">
@@ -56,6 +54,7 @@ const Register = () => {
                   className="input"
                   type="password"
                   placeholder="Create password"
+                  style={{ borderRadius: "0px" }}
                 />
               </div>
             </div>

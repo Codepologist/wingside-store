@@ -122,17 +122,26 @@ const Navbar = () => {
                   </Link>
                 </p>
                 <p className="control">
-                  <Link className="button is-ghost is-no-focus-outline is-size-6 has-text-weight-bold" to="/register">
+                  <Link
+                    className="button is-ghost is-no-focus-outline is-size-6 has-text-weight-bold"
+                    to="/register"
+                  >
                     Register
                   </Link>
                 </p>
                 <p className="control">
-                  <a className="button is-ghost is-no-focus-outline is-size-6 has-text-weight-bold" href="#">
+                  <a
+                    className="button is-ghost is-no-focus-outline is-size-6 has-text-weight-bold"
+                    href="#"
+                  >
                     My Orders
                   </a>
                 </p>
                 <p className="control">
-                  <a className="button is-ghost is-no-focus-outline is-size-6 has-text-weight-bold" href="#">
+                  <a
+                    className="button is-ghost is-no-focus-outline is-size-6 has-text-weight-bold"
+                    href="#"
+                  >
                     Cart
                     <HiOutlineShoppingBag className="is-size-4" />
                     <span

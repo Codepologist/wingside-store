@@ -42,6 +42,7 @@ const Login = () => {
                   className="input"
                   type="password"
                   placeholder="Your password"
+                  style={{ borderRadius: "0px" }}
                 />
               </div>
             </div>
