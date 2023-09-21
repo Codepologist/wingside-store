@@ -59,18 +59,6 @@ const Register = () => {
                 />
               </div>
             </div>
-            <div className="field mb-4">
-              <label className="label" for="">
-               Confirm Password
-              </label>
-              <div className="control">
-                <input
-                  className="input"
-                  type="password"
-                  placeholder="Confirm password"
-                />
-              </div>
-            </div>
             <label className="checkbox is-flex mb-6">
               <input
                 className="mr-4"
