@@ -17,12 +17,12 @@ $dark-333: #333333;
 
 $warning: $yellow;
 
-$button-ghost-border-color: transparent;
-$button-ghost-decoration: none;
-$button-ghost-hover-decoration: none;
-$button-ghost-background: none;
+// $button-ghost-border-color: transparent;
+// $button-ghost-decoration: none;
+ $button-ghost-hover-decoration: none;
+// $button-ghost-background: none;
 
-$button-border-color: transparent;
+
 
 $button-focus-box-shadow-color: none;
 
@@ -69,7 +69,14 @@ $button-focus-box-shadow-color: none;
   }
 }
 
+// .navbar-menu {
+//   transition: transform 0.3s ease-in-out !important;
+//   transform: translateY(100%) !important;
+// }
 
+// .navbar-menu.is-active {
+//   transform: translateY(0) !important;
+// }
 
 .navbar-burger {
   &:hover {
