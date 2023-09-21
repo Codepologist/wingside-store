@@ -6,7 +6,6 @@
 
 $family-sans-serif: "Poppins", sans-serif;
 
-
 $yellow: #f9cb0f;
 $link: #502829;
 
@@ -19,14 +18,17 @@ $warning: $yellow;
 
 // $button-ghost-border-color: transparent;
 // $button-ghost-decoration: none;
- $button-ghost-hover-decoration: none;
+$button-ghost-hover-decoration: none;
 // $button-ghost-background: none;
-
-
 
 $button-focus-box-shadow-color: none;
 
 // Define CSS Class
+
+.navbar-backdrop {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  
+}
 
 .is-no-focus-outline {
   &:hover,
@@ -51,15 +53,11 @@ $button-focus-box-shadow-color: none;
   margin-right: auto !important;
 }
 
-
-
 @media screen and (min-width: 1024px) {
   .hero-paragraph-padding {
     padding-bottom: 15rem;
   }
 }
-
-
 
 @media screen and (max-width: 768px) {
   .is-hero-item-center {

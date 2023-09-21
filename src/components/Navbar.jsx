@@ -21,9 +21,25 @@ const Navbar = () => {
 
   return (
     <section className="is-relative is-clipped has-background-light">
+      {menuOpen && (
+        <div
+          className="navbar-backdrop"
+          onClick={untoggleMenu}
+          style={{
+            position: "fixed",
+            top: "19.5rem",
+            left: 0,
+            width: "100%",
+            height: "100%",
+            zIndex: 98,  // Adjust the zIndex to be below the menu (e.g., 98)
+          }}
+        />
+      )}
       <nav
         className="navbar has-background-light is-transparent is-fixed-top"
-        style={{ borderBottom: "1px solid #cfd5e2" }}
+        style={{
+          borderBottom: "1px solid #cfd5e2",
+        }}
       >
         <div className="navbar-brand is-align-items-center">
           <a className="navbar-item" href="#" onClick={untoggleMenu}>
@@ -46,7 +62,7 @@ const Navbar = () => {
           >
             <HiOutlineShoppingBag className="is-size-4" />
             <span
-              className="has-background-warning has-text-weight-bold"
+              className="has-background-warning has-text-weight-semibold"
               style={{
                 width: "24px",
                 height: "24px",
@@ -74,14 +90,14 @@ const Navbar = () => {
         >
           <div className="navbar-end">
             <a
-              className="navbar-item mobile-menu is-size-6 has-text-weight-bold"
+              className="navbar-item mobile-menu is-size-6 has-text-weight-semibold"
               href="#"
               onClick={untoggleMenu}
             >
               Home
             </a>
             <a
-              className="navbar-item mobile-menu is-size-6 has-text-weight-bold"
+              className="navbar-item mobile-menu is-size-6 has-text-weight-semibold"
               href="#"
               onClick={untoggleMenu}
             >
@@ -89,21 +105,21 @@ const Navbar = () => {
             </a>
             <hr className="navbar-divider is-hidden-desktop" />
             <Link
-              className="navbar-item mobile-menu is-hidden-desktop is-size-6 has-text-weight-bold"
+              className="navbar-item mobile-menu is-hidden-desktop is-size-6 has-text-weight-semibold"
               to="/login"
               onClick={untoggleMenu}
             >
               Login
             </Link>
             <Link
-              className="navbar-item mobile-menu is-hidden-desktop is-size-6 has-text-weight-bold "
+              className="navbar-item mobile-menu is-hidden-desktop is-size-6 has-text-weight-semibold "
               to="/register"
               onClick={untoggleMenu}
             >
               Register
             </Link>
             <a
-              className="navbar-item mobile-menu is-hidden-desktop is-size-6 has-text-weight-bold"
+              className="navbar-item mobile-menu is-hidden-desktop is-size-6 has-text-weight-semibold"
               href="#"
               onClick={untoggleMenu}
             >
@@ -115,7 +131,7 @@ const Navbar = () => {
               <div className="field is-grouped">
                 <p className="control">
                   <Link
-                    className="button is-ghost is-no-focus-outline is-size-6 has-text-weight-bold"
+                    className="button is-ghost is-no-focus-outline is-size-6 has-text-weight-semibold"
                     to="/login"
                   >
                     Login
@@ -123,7 +139,7 @@ const Navbar = () => {
                 </p>
                 <p className="control">
                   <Link
-                    className="button is-ghost is-no-focus-outline is-size-6 has-text-weight-bold"
+                    className="button is-ghost is-no-focus-outline is-size-6 has-text-weight-semibold"
                     to="/register"
                   >
                     Register
@@ -131,7 +147,7 @@ const Navbar = () => {
                 </p>
                 <p className="control">
                   <a
-                    className="button is-ghost is-no-focus-outline is-size-6 has-text-weight-bold"
+                    className="button is-ghost is-no-focus-outline is-size-6 has-text-weight-semibold"
                     href="#"
                   >
                     My Orders
@@ -139,13 +155,13 @@ const Navbar = () => {
                 </p>
                 <p className="control">
                   <a
-                    className="button is-ghost is-no-focus-outline is-size-6 has-text-weight-bold"
+                    className="button is-ghost is-no-focus-outline is-size-6 has-text-weight-semibold"
                     href="#"
                   >
                     Cart
                     <HiOutlineShoppingBag className="is-size-4" />
                     <span
-                      className="has-background-warning has-text-weight-bold"
+                      className="has-background-warning has-text-weight-semibold"
                       style={{
                         width: "24px",
                         height: "24px",
