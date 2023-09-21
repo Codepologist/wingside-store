@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { logo } from "../assets";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
   HiOutlineHeart,
   HiMenuAlt3,
@@ -59,7 +59,7 @@ const Navbar = () => {
 
           <button
             role="button"
-            className={`navbar-burger ${menuOpen ? "is-active" : ""}`}
+            className={`navbar-burger ${menuOpen ? "i-active" : ""}`}
             aria-label="menu"
             aria-expanded="false"
             data-target="navbarMenuH"
@@ -70,45 +70,65 @@ const Navbar = () => {
         </div>
         <div
           id="navbarMenuH"
-          className={`navbar-menu ${
-            menuOpen ? "is-active" : ""
-          }`}
+          className={`navbar-menu ${menuOpen ? "is-active" : ""}`}
         >
           <div className="navbar-end">
-            <a className="navbar-item mobile-menu" href="#" onClick={untoggleMenu}>
+            <a
+              className="navbar-item mobile-menu"
+              href="#"
+              onClick={untoggleMenu}
+            >
               Home
             </a>
-            <a className="navbar-item mobile-menu" href="#" onClick={untoggleMenu}>
+            <a
+              className="navbar-item mobile-menu"
+              href="#"
+              onClick={untoggleMenu}
+            >
               Contact Us
             </a>
             <hr className="navbar-divider is-hidden-desktop" />
-            <a className="navbar-item mobile-menu is-hidden-desktop" href="#" onClick={untoggleMenu}>
-             Login
-            </a>
-            <a className="navbar-item mobile-menu is-hidden-desktop " href="#" onClick={untoggleMenu}>
+            <Link
+              className="navbar-item mobile-menu is-hidden-desktop"
+              to="/login"
+              onClick={untoggleMenu}
+            >
+              Login
+            </Link>
+            <Link
+              className="navbar-item mobile-menu is-hidden-desktop "
+              to="/register"
+              onClick={untoggleMenu}
+            >
               Register
-            </a>
-            <a className="navbar-item mobile-menu is-hidden-desktop " href="#" onClick={untoggleMenu}>
+            </Link>
+            <a
+              className="navbar-item mobile-menu is-hidden-desktop "
+              href="#"
+              onClick={untoggleMenu}
+            >
               My Orders
             </a>
           </div>
-          
           <div className="navbar-end is-hidden-mobile is-hidden-tablet-only">
             <div className="navbar-item">
               <div className="field is-grouped">
                 <p className="control">
-                  <a className="button is-ghost is-no-focus-outline" href="#">
-                  Login
-                  </a>
+                  <Link
+                    className="button is-ghost is-no-focus-outline"
+                    to="/login"
+                  >
+                    Login
+                  </Link>
+                </p>
+                <p className="control">
+                  <Link className="button is-ghost is-no-focus-outline" to="/register">
+                    Register
+                  </Link>
                 </p>
                 <p className="control">
                   <a className="button is-ghost is-no-focus-outline" href="#">
-                  Register
-                  </a>
-                </p>
-                <p className="control">
-                  <a className="button is-ghost is-no-focus-outline" href="#">
-                  My Orders
+                    My Orders
                   </a>
                 </p>
                 <p className="control">
