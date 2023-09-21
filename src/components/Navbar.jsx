@@ -65,7 +65,7 @@ const Navbar = () => {
             data-target="navbarMenuH"
             onClick={toggleMenu}
           >
-            <HiMenuAlt3 className="is-size-3 mr-0" />
+            <HiMenuAlt3 className="is-size-4 mr-0" />
           </button>
         </div>
         <div
@@ -74,14 +74,14 @@ const Navbar = () => {
         >
           <div className="navbar-end">
             <a
-              className="navbar-item mobile-menu"
+              className="navbar-item mobile-menu is-size-6 has-text-weight-bold"
               href="#"
               onClick={untoggleMenu}
             >
               Home
             </a>
             <a
-              className="navbar-item mobile-menu"
+              className="navbar-item mobile-menu is-size-6 has-text-weight-bold"
               href="#"
               onClick={untoggleMenu}
             >
@@ -89,21 +89,21 @@ const Navbar = () => {
             </a>
             <hr className="navbar-divider is-hidden-desktop" />
             <Link
-              className="navbar-item mobile-menu is-hidden-desktop"
+              className="navbar-item mobile-menu is-hidden-desktop is-size-6 has-text-weight-bold"
               to="/login"
               onClick={untoggleMenu}
             >
               Login
             </Link>
             <Link
-              className="navbar-item mobile-menu is-hidden-desktop "
+              className="navbar-item mobile-menu is-hidden-desktop is-size-6 has-text-weight-bold "
               to="/register"
               onClick={untoggleMenu}
             >
               Register
             </Link>
             <a
-              className="navbar-item mobile-menu is-hidden-desktop "
+              className="navbar-item mobile-menu is-hidden-desktop is-size-6 has-text-weight-bold"
               href="#"
               onClick={untoggleMenu}
             >
@@ -115,24 +115,24 @@ const Navbar = () => {
               <div className="field is-grouped">
                 <p className="control">
                   <Link
-                    className="button is-ghost is-no-focus-outline"
+                    className="button is-ghost is-no-focus-outline is-size-6 has-text-weight-bold"
                     to="/login"
                   >
                     Login
                   </Link>
                 </p>
                 <p className="control">
-                  <Link className="button is-ghost is-no-focus-outline" to="/register">
+                  <Link className="button is-ghost is-no-focus-outline is-size-6 has-text-weight-bold" to="/register">
                     Register
                   </Link>
                 </p>
                 <p className="control">
-                  <a className="button is-ghost is-no-focus-outline" href="#">
+                  <a className="button is-ghost is-no-focus-outline is-size-6 has-text-weight-bold" href="#">
                     My Orders
                   </a>
                 </p>
                 <p className="control">
-                  <a className="button is-ghost is-no-focus-outline" href="#">
+                  <a className="button is-ghost is-no-focus-outline is-size-6 has-text-weight-bold" href="#">
                     Cart
                     <HiOutlineShoppingBag className="is-size-4" />
                     <span
