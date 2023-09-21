@@ -32,7 +32,7 @@ const Navbar = () => {
             width: "100%",
             height: "100%",
             zIndex: 98,
-            overflow: hidden,
+           
               // Adjust the zIndex to be below the menu (e.g., 98)
           }}
         />
