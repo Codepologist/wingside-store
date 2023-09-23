@@ -21,8 +21,6 @@ const Navbar = () => {
 
   return (
     <section className="is-relative is-clipped has-background-light">
-<<<<<<< HEAD
-=======
       {menuOpen && (
         <div
           className="navbar-backdrop"
@@ -34,12 +32,12 @@ const Navbar = () => {
             width: "100%",
             height: "100%",
             zIndex: 98,
-           
-              // Adjust the zIndex to be below the menu (e.g., 98)
+
+            // Adjust the zIndex to be below the menu (e.g., 98)
           }}
         />
       )}
->>>>>>> d9311b7fdf5bf6a7de4b28a015f6321d4e4925f2
+
       <nav
         className="navbar has-background-light is-transparent is-fixed-top"
         style={{
