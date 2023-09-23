@@ -25,11 +25,6 @@ $button-focus-box-shadow-color: none;
 
 // Define CSS Class
 
-.navbar-backdrop {
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
-  
-}
-
 .is-no-focus-outline {
   &:hover,
   &:focus,
