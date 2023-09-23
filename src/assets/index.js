@@ -28,6 +28,7 @@ import cafe from "./wingside-4-scaled-300x300.webp";
 import frenchfriessandwinch from "./Untitled-design-300x300.webp";
 import loadedfries from "./wingsidee5-1-300x300.webp";
 import google from "./google-form-xs.svg";
+import contact from "./contact-us-1440x318.webp";
 
 
 export {
@@ -61,4 +62,5 @@ export {
   frenchfriessandwinch,
   loadedfries,
   google,
+  contact,
 };
