@@ -21,23 +21,6 @@ const Navbar = () => {
 
   return (
     <section className="is-relative is-clipped has-background-light">
-      {menuOpen && (
-        <div
-          className="navbar-backdrop"
-          onClick={untoggleMenu}
-          style={{
-            position: "fixed",
-            top: "19.5rem",
-            left: 0,
-            width: "100%",
-            height: "100%",
-            zIndex: 98,
-
-            // Adjust the zIndex to be below the menu (e.g., 98)
-          }}
-        />
-      )}
-
       <nav
         className="navbar has-background-light is-transparent is-fixed-top"
         style={{
