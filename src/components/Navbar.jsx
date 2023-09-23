@@ -21,22 +21,6 @@ const Navbar = () => {
 
   return (
     <section className="is-relative is-clipped has-background-light">
-      {menuOpen && (
-        <div
-          className="navbar-backdrop"
-          onClick={untoggleMenu}
-          style={{
-            position: "fixed",
-            top: "19.5rem",
-            left: 0,
-            width: "100%",
-            height: "100%",
-            zIndex: 98,
-            overflow: hidden,
-              // Adjust the zIndex to be below the menu (e.g., 98)
-          }}
-        />
-      )}
       <nav
         className="navbar has-background-light is-transparent is-fixed-top"
         style={{
@@ -91,20 +75,31 @@ const Navbar = () => {
           className={`navbar-menu ${menuOpen ? "is-active" : ""}`}
         >
           <div className="navbar-end">
-            <a
+            <Link
               className="navbar-item mobile-menu is-size-6 has-text-weight-semibold"
-              href="#"
+              to="/"
               onClick={untoggleMenu}
             >
               Home
-            </a>
-            <a
+            </Link>
+            <div className="navbar-item has-dropdown is-hoverable mobile-menu is-size-6 has-text-weight-semibold">
+              <a class="navbar-link ">Other Links</a>
+              <div className="navbar-dropdown">
+                <a className="navbar-item">Our Menu</a>
+                <a className="navbar-item">Flavors</a>
+                <a className="navbar-item">Catering</a>
+                <a className="navbar-item">Wing Club</a>
+                <hr className="navbar-divider" />
+                <div className="navbar-item">Wingside Business</div>
+              </div>
+            </div>
+            <Link
               className="navbar-item mobile-menu is-size-6 has-text-weight-semibold"
-              href="#"
+              to="/contact"
               onClick={untoggleMenu}
             >
               Contact Us
-            </a>
+            </Link>
             <hr className="navbar-divider is-hidden-desktop" />
             <Link
               className="navbar-item mobile-menu is-hidden-desktop is-size-6 has-text-weight-semibold"

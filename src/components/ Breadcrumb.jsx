@@ -2,7 +2,7 @@ const Breadcrumb = () => {
   return (
     <section className="section">
       <div className="container">
-        <nav className="breadcrumb is-centered">
+        <nav className="breadcrumb is-centered has-text-weight-semibold">
           <ul>
             <li>
               <a href="#">Careers</a>

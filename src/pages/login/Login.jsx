@@ -21,7 +21,7 @@ const Login = () => {
           </div>
           <form action="">
             <div className="field mb-4">
-              <label className="label" for="">
+              <label className="label" htmlFor="">
                 Email
               </label>
               <div className="control">
@@ -34,7 +34,7 @@ const Login = () => {
               </div>
             </div>
             <div className="field mb-4">
-              <label className="label" for="">
+              <label className="label" htmlFor="">
                 Password
               </label>
               <div className="control">

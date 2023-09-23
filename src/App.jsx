@@ -13,7 +13,16 @@ import {
   WingsideSpecial,
 } from "./components";
 
-import { Home, Admin, OrderNow, Cart, OrderHistory, Contact, Login, Register } from "./pages";
+import {
+  Home,
+  Admin,
+  OrderNow,
+  Cart,
+  OrderHistory,
+  Contact,
+  Login,
+  Register,
+} from "./pages";
 
 function App() {
   return (
@@ -38,6 +47,7 @@ function App() {
         <Route path="/Login/" element={<Login />} />
         <Route path="/Register/" element={<Register />} />
         <Route path="/Cart/" element={<Cart />} />
+        <Route path="/Contact/" element={<Contact />} />
       </Routes>
       <Footer />
     </React.Fragment>
