@@ -77,29 +77,29 @@ $button-focus-box-shadow-color: none;
   }
 }
 
-.mobile-menu {
-  color: #fcfcfc;
-  -webkit-animation: menuAnimation 300ms ease;
-  animation: menuAnimation 300ms ease;
-}
+// .mobile-menu {
+//   color: #fcfcfc;
+//   -webkit-animation: menuAnimation 300ms ease;
+//   animation: menuAnimation 300ms ease;
+// }
 
-@-webkit-keyframes menuAnimation {
-  0% {
-    margin-left: -100px;
-  }
-  100% {
-    margin-left: 0;
-  }
-}
+// @-webkit-keyframes menuAnimation {
+//   0% {
+//     margin-left: -100px;
+//   }
+//   100% {
+//     margin-left: 0;
+//   }
+// }
 
-@keyframes menuAnimation {
-  0% {
-    margin-left: -100px;
-  }
-  100% {
-    margin-left: 0;
-  }
-}
+// @keyframes menuAnimation {
+//   0% {
+//     margin-left: -100px;
+//   }
+//   100% {
+//     margin-left: 0;
+//   }
+// }
 
 // @-webkit-keyframes menuAnimation {
 //   0% {

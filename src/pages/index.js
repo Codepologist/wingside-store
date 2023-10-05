@@ -6,5 +6,6 @@ import OrderHistory from "./orderHistory/OrderHistory";
 import Contact from "./contact/Contact";
 import Register from "./register/Register";
 import Login from "./login/Login";
+import Reset from "./reset/Reset";
 
-export { Home, Admin, OrderNow, Cart, OrderHistory, Contact, Register, Login };
+export { Home, Admin, OrderNow, Cart, OrderHistory, Contact, Register, Login, Reset };

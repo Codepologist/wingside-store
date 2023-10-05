@@ -21,6 +21,7 @@ import {
   OrderHistory,
   Contact,
   Login,
+  Reset,
   Register,
 } from "./pages";
 
@@ -45,6 +46,7 @@ function App() {
           />
         </Route>
         <Route path="/Login/" element={<Login />} />
+        <Route path="/Reset/" element={<Reset />} />
         <Route path="/Register/" element={<Register />} />
         <Route path="/Cart/" element={<Cart />} />
         <Route path="/Contact/" element={<Contact />} />

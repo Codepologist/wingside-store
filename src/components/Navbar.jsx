@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { logo } from "../assets";
 import { Link } from "react-router-dom";
+import "animate.css/animate.css";
 import {
   HiOutlineHeart,
   HiMenuAlt3,
@@ -10,6 +11,17 @@ import {
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [animateClass, setAnimateClass] = useState("");
+
+  useEffect(() => {
+    if (menuOpen) {
+      // Add animation class when menu becomes active
+      setAnimateClass("animate__animated animate__backInLeft");
+    } else {
+      // Remove animation class when menu is not active
+      setAnimateClass("");
+    }
+  }, [menuOpen]);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -28,9 +40,9 @@ const Navbar = () => {
         }}
       >
         <div className="navbar-brand is-align-items-center">
-          <a className="navbar-item" href="#" onClick={untoggleMenu}>
+          <Link className="navbar-item" to="/" onClick={untoggleMenu}>
             <img src={logo} alt="Logo" />
-          </a>
+          </Link>
           <a
             className="navbar-item button is-ghost is-no-focus-outline is-hidden-desktop"
             href="#"
@@ -61,7 +73,7 @@ const Navbar = () => {
 
           <button
             role="button"
-            className={`navbar-burger ${menuOpen ? "i-active" : ""}`}
+            className={`navbar-burger ${menuOpen ? "is-active" : ""}`}
             aria-label="menu"
             aria-expanded="false"
             data-target="navbarMenuH"
@@ -72,7 +84,7 @@ const Navbar = () => {
         </div>
         <div
           id="navbarMenuH"
-          className={`navbar-menu ${menuOpen ? "is-active" : ""}`}
+          className={`navbar-menu ${menuOpen ? `is-active ${animateClass}` : ""}`}
         >
           <div className="navbar-end">
             <Link
