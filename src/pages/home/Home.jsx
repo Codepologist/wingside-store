@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 import { hand } from "../../assets";
 
@@ -9,16 +9,6 @@ import {
 } from "../../components";
 
 const Home = () => {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    const delay = setTimeout(() => {
-      setIsLoading(false);
-    }, 5000);
-
-    return () => clearTimeout(delay);
-  }, []);
-
   return (
     <React.Fragment>
       <Helmet>
@@ -39,9 +29,8 @@ const Home = () => {
           content="The Wingside of Town – Wings. Sandwiches. Wraps - Wingside®"
         />
       </Helmet>
-    
-    
-     <section className="hero is-warning" style={{ paddingTop: "2.9rem" }}>
+
+      <section className="hero is-warning">
         <div className="hero-body pb-0">
           <div className="columns is-align-items-center">
             <div className="column">

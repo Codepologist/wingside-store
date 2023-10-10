@@ -34,7 +34,7 @@ const Navbar = () => {
   return (
     <section className="is-relative is-clipped has-background-light">
       <nav
-        className="navbar has-background-light is-transparent is-fixed-top"
+        className="navbar has-background-light is-transparent"
         style={{
           borderBottom: "1px solid #cfd5e2",
         }}

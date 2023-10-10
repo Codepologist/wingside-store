@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { google } from "../../assets";
 import { Link } from "react-router-dom";
 
 const Register = () => {
@@ -11,62 +10,68 @@ const Register = () => {
     <div className="section">
       <div className="container">
         <div
-          className="card"
+          className="box has-text-centered py-6-desktop"
           style={{
-            maxWidth: "30rem",
+            maxWidth: "28rem",
             marginTop: "3rem",
             marginLeft: "auto",
             marginRight: "auto",
+            borderWidth: "1px",
+            borderColor: "#DADFE9",
+            borderStyle: "solid",
+            boxShadow: "none",
+            color: "#0A2463",
+            borderRadius: "5px",
+            paddingTop: "3rem",
+            paddingBottom: "3rem",
+            paddingLeft: "2.5rem",
+            paddingRight: "2.5rem",
           }}
         >
-          <div className="card-content">
-            <div className="has-text-centered">
-              <h2 className="title is-size-3 is-size-4-mobile mt-6 mb-2 is-spaced">
-                Register an account
-              </h2>
-              <p className="subtitle mb-6 ">Please enter details to proceed.</p>
+          <form action="">
+            <span class="has-text-info has-text-weight-semibold">
+              Register an account
+            </span>
+            <h3 class="mt-4 mb-6 title is-3">Join our community</h3>
+            <div className="field mb-5">
+              <div className="control">
+                <input
+                  className="input py-5"
+                  type="email"
+                  placeholder="Email"
+                  style={{ borderRadius: "0px" }}
+                />
+              </div>
             </div>
-            <form action="">
-              <div className="field mb-4">
-                <div className="control">
-                  <input
-                    className="input"
-                    type="email"
-                    placeholder="Email"
-                    style={{ borderRadius: "0px" }}
-                  />
-                </div>
+            <div className="field mb-5">
+              <div className="control">
+                <input
+                  className="input py-5"
+                  type="password"
+                  placeholder="Create password"
+                  style={{ borderRadius: "0px" }}
+                />
               </div>
-              <div className="field mb-4">
-                <div className="control">
-                  <input
-                    className="input"
-                    type="password"
-                    placeholder="Create password"
-                    style={{ borderRadius: "0px" }}
-                  />
-                </div>
+            </div>
+            <div className="field mb-5">
+              <div className="control">
+                <input
+                  className="input py-5"
+                  type="password"
+                  placeholder="Confirm password"
+                  style={{ borderRadius: "0px" }}
+                />
               </div>
-              <div className="field mb-4">
-                <div className="control">
-                  <input
-                    className="input"
-                    type="password"
-                    placeholder="Confirm password"
-                    style={{ borderRadius: "0px" }}
-                  />
-                </div>
-              </div>
-              <a className="button is-dark mb-4 is-fullwidth is-radiusless">
-                Register
-              </a>
+            </div>
+            <button className="button is-dark mb-5 py-5 is-fullwidth is-radiusless">
+              Register
+            </button>
 
-              <p className="is-size-7 has-text-centered">
-                <span>Have an account? </span>
-                <Link to="/login">Sign In</Link>
-              </p>
-            </form>
-          </div>
+            <p className="is-size-7 has-text-centered">
+              <span>Have an account? </span>
+              <Link to="/login">Sign In</Link>
+            </p>
+          </form>
         </div>
       </div>
     </div>
