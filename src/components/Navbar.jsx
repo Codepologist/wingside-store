@@ -60,7 +60,7 @@ const Navbar = () => {
           >
             <HiOutlineShoppingBag className="is-size-4" />
             <span
-              className="has-background-warning has-text-weight-semibold"
+              className="has-background-warning "
               style={{
                 width: "24px",
                 height: "24px",
@@ -84,17 +84,19 @@ const Navbar = () => {
         </div>
         <div
           id="navbarMenuH"
-          className={`navbar-menu ${menuOpen ? `is-active ${animateClass}` : ""}`}
+          className={`navbar-menu ${
+            menuOpen ? `is-active ${animateClass}` : ""
+          }`}
         >
           <div className="navbar-end">
             <Link
-              className="navbar-item mobile-menu is-size-6 has-text-weight-semibold"
+              className="navbar-item mobile-menu is-size-6"
               to="/"
               onClick={untoggleMenu}
             >
               Home
             </Link>
-            <div className="navbar-item has-dropdown is-hoverable mobile-menu is-size-6 has-text-weight-semibold">
+            <div className="navbar-item has-dropdown is-hoverable mobile-menu is-size-6">
               <a class="navbar-link ">Other Links</a>
               <div className="navbar-dropdown">
                 <a className="navbar-item">Our Menu</a>
@@ -106,7 +108,7 @@ const Navbar = () => {
               </div>
             </div>
             <Link
-              className="navbar-item mobile-menu is-size-6 has-text-weight-semibold"
+              className="navbar-item mobile-menu is-size-6 "
               to="/contact"
               onClick={untoggleMenu}
             >
@@ -114,21 +116,21 @@ const Navbar = () => {
             </Link>
             <hr className="navbar-divider is-hidden-desktop" />
             <Link
-              className="navbar-item mobile-menu is-hidden-desktop is-size-6 has-text-weight-semibold"
+              className="navbar-item mobile-menu is-hidden-desktop is-size-6 "
               to="/login"
               onClick={untoggleMenu}
             >
               Login
             </Link>
             <Link
-              className="navbar-item mobile-menu is-hidden-desktop is-size-6 has-text-weight-semibold "
+              className="navbar-item mobile-menu is-hidden-desktop is-size-6  "
               to="/register"
               onClick={untoggleMenu}
             >
               Register
             </Link>
             <a
-              className="navbar-item mobile-menu is-hidden-desktop is-size-6 has-text-weight-semibold"
+              className="navbar-item mobile-menu is-hidden-desktop is-size-6 "
               href="#"
               onClick={untoggleMenu}
             >
@@ -140,7 +142,7 @@ const Navbar = () => {
               <div className="field is-grouped">
                 <p className="control">
                   <Link
-                    className="button is-ghost is-no-focus-outline is-size-6 has-text-weight-semibold"
+                    className="button is-ghost is-no-focus-outline is-size-6 "
                     to="/login"
                   >
                     Login
@@ -148,7 +150,7 @@ const Navbar = () => {
                 </p>
                 <p className="control">
                   <Link
-                    className="button is-ghost is-no-focus-outline is-size-6 has-text-weight-semibold"
+                    className="button is-ghost is-no-focus-outline is-size-6 "
                     to="/register"
                   >
                     Register
@@ -156,7 +158,7 @@ const Navbar = () => {
                 </p>
                 <p className="control">
                   <a
-                    className="button is-ghost is-no-focus-outline is-size-6 has-text-weight-semibold"
+                    className="button is-ghost is-no-focus-outline is-size-6 "
                     href="#"
                   >
                     My Orders
@@ -164,13 +166,13 @@ const Navbar = () => {
                 </p>
                 <p className="control">
                   <a
-                    className="button is-ghost is-no-focus-outline is-size-6 has-text-weight-semibold"
+                    className="button is-ghost is-no-focus-outline is-size-6 "
                     href="#"
                   >
                     Cart
                     <HiOutlineShoppingBag className="is-size-4" />
                     <span
-                      className="has-background-warning has-text-weight-semibold"
+                      className="has-background-warning "
                       style={{
                         width: "24px",
                         height: "24px",

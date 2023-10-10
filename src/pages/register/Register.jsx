@@ -1,7 +1,12 @@
+import { useState } from "react";
 import { google } from "../../assets";
 import { Link } from "react-router-dom";
 
 const Register = () => {
+  const [email, setEmail] = useState();
+  const [password, setPassword] = useState();
+  const [confirmPassword, setConfirmPassword] = useState();
+
   return (
     <div className="section">
       <div className="container">
@@ -23,35 +28,16 @@ const Register = () => {
             </div>
             <form action="">
               <div className="field mb-4">
-                <label className="label" htmlFor="">
-                  Username
-                </label>
-                <div className="control">
-                  <input
-                    className="input"
-                    type="text"
-                    placeholder="Create a Username"
-                    style={{ borderRadius: "0px" }}
-                  />
-                </div>
-              </div>
-              <div className="field mb-4">
-                <label className="label" htmlFor="">
-                  Email
-                </label>
                 <div className="control">
                   <input
                     className="input"
                     type="email"
-                    placeholder="Enter your email address"
+                    placeholder="Email"
                     style={{ borderRadius: "0px" }}
                   />
                 </div>
               </div>
               <div className="field mb-4">
-                <label className="label" htmlFor="">
-                  Password
-                </label>
                 <div className="control">
                   <input
                     className="input"
@@ -61,27 +47,20 @@ const Register = () => {
                   />
                 </div>
               </div>
-              <label className="checkbox is-flex mb-6">
-                <input
-                  className="mr-4"
-                  type="checkbox"
-                  name="terms"
-                  value="1"
-                  style={{ borderRadius: "0px" }}
-                />
-                <div className="is-size-7">
-                  <span>
-                    I want to receive updates about products and promotions.
-                  </span>
+              <div className="field mb-4">
+                <div className="control">
+                  <input
+                    className="input"
+                    type="password"
+                    placeholder="Confirm password"
+                    style={{ borderRadius: "0px" }}
+                  />
                 </div>
-              </label>
+              </div>
               <a className="button is-dark mb-4 is-fullwidth is-radiusless">
                 Register
               </a>
-              <a className="button mb-6 is-flex is-justify-content-center is-align-items-center is-radiusless">
-                <img className="mr-2 image" src={google} alt="" />
-                <span>Sign In with Google</span>
-              </a>
+
               <p className="is-size-7 has-text-centered">
                 <span>Have an account? </span>
                 <Link to="/login">Sign In</Link>
