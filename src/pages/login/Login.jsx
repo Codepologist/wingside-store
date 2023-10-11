@@ -44,7 +44,7 @@ const Login = () => {
                 <input
                   className="input py-5"
                   type="password"
-                  placeholder="Create password"
+                  placeholder="Enter password"
                   style={{ borderRadius: "0px" }}
                 />
               </div>
